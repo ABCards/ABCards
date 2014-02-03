@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">ABCards</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="game1">BlackJack</string>
+    <string name="game2">game2</string>
+    <string name="game3">game3</string>
+    <string name="options">options</string>
+    <string name="tutorial">game tutorials</string>
+    <string name="title_activity_black_jack">BlackJack</string>
+
+</resources>
