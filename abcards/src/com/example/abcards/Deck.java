@@ -11,6 +11,7 @@ public class Deck
 	Deck()
 	{
 		build_ordered_deck();
+		shuffle_deck();
 	}
 
 	public void shuffle_deck()
@@ -28,8 +29,15 @@ public class Deck
 		 * This may not be needed for our program, but if it is
 		   the arrayList deck should contain 52 cards in order.
 		 */
-		deck1 = new ArrayList<Card>();
+		this.deck1 = new ArrayList<Card>();
 		// May need to add each individual image in to deck....
+		int start_card = 0x7f020002;
+		for(int i = 0; i < 52; i++)
+		{
+			Card temp = new Card(start_card, ((i+1)%13));
+			deck1.add(temp);
+			start_card++;
+		}
 	}
 	
 	public Card deal_top_car()
@@ -41,5 +49,9 @@ public class Deck
 		Card temp = deck1.get(deck1.size() - 1);
 		deck1.remove(deck1.size() - 1);
 		return temp;
+	}
+	public List getDeck()
+	{
+		return deck1;
 	}
 }

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_blackjack" >
+    android:background="@drawable/bj_bg" >
 
     <Button
         android:id="@+id/deal"
@@ -13,27 +13,7 @@
         android:layout_marginBottom="19dp"
         android:layout_marginLeft="23dp"
         android:text="@string/deal"
-        android:onClick="deal" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="225dp"
-        android:layout_marginTop="27dp"
-        android:text="@string/coin" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="267dp"
-        android:layout_marginTop="27dp"
-        android:text="C" />
+        android:onClick="deal" />    
 
     <ImageView
         android:id="@+id/deck1"
@@ -74,5 +54,71 @@
         android:layout_marginRight="21dp"
         android:layout_marginTop="52dp"
         android:src="@drawable/rb" />
+    
+    <ImageView
+        android:id="@+id/player_hand1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="125dp"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/rb" 
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/player_hand2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="137dp"
+        android:layout_marginBottom="138dp"
+        android:src="@drawable/rb" 
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/dealer_hand1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/rb" 
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/dealer_hand2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/rb" 
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/dealer_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="165dp"
+        android:text="@string/test"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/player_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="155dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/test"
+        android:visibility="gone" />
 
 </RelativeLayout>

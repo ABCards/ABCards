@@ -8,7 +8,9 @@ public class Card
 	Card(int image, int number)
 	{
 		this.image = image;
-		this.blackjack_number = number;
+		if(number == 11 || number == 12 || number == 0)
+			blackjack_number = 10;
+		else blackjack_number = number;
 	}
 	
 	public int getImage()
