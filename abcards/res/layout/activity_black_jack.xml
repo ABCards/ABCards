@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blackjack" >
+
+    <Button
+        android:id="@+id/deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="23dp"
+        android:text="@string/deal"
+        android:onClick="deal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/coin" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="267dp"
+        android:layout_marginTop="27dp"
+        android:text="C" />
+
+    <ImageView
+        android:id="@+id/deck1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/rb" />
+    
+    <ImageView
+        android:id="@+id/deck2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/rb" />
+    
+    <ImageView
+        android:id="@+id/deck3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/rb" />
+    
+    <ImageView
+        android:id="@+id/deck4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/rb" />
+
+</RelativeLayout>
