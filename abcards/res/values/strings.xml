@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">ABCards</string>
@@ -10,5 +11,8 @@
     <string name="options">options</string>
     <string name="tutorial">game tutorials</string>
     <string name="title_activity_black_jack">BlackJack</string>
+    <string name="action_settings">Settings</string>
+    <string name="deal">deal</string>
+    <string name="coin">coin</string>
 
 </resources>
